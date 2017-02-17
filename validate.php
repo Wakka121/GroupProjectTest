@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    if(!isset($_POST) or !isset($_POST["username"]) or !isset($_POST["password"])) {
+    if(empty($_POST) or empty($_POST["username"]) or empty($_POST["password"])) {
         session_unset();
         session_destroy();
         header("location: login.php");
