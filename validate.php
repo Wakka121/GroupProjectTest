@@ -4,7 +4,7 @@
     if(!isset($_POST) or !isset($_POST["username"]) or !isset($_POST["password"])) {
         session_unset();
         session_destroy();
-        header("location: test.php");
+        header("location: login.php");
         exit();
     }
 
@@ -12,8 +12,9 @@
 
     function login($username, $password) {
         global $accounts;
-        if(!isset($accounts[$username]))
-            return(false);
+        if(!isset($accounts[$username])) {
+            return (false);
+        }
         return($password==$accounts[$username]);
     }
 
@@ -28,5 +29,5 @@
 
     session_unset();
     session_destroy();
-    header("location: test.php");
+    header("location: login.php");
 ?>
