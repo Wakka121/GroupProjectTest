@@ -14,6 +14,6 @@
 <body>
     <form method="get" action="logout.php">
         <p>Congratulations you have successfully logged in</p>
-        <button type="button">Logout</button>
+        <button type="submit">Logout</button>
     </form>
 </body>
