@@ -12,11 +12,9 @@
 
     function login($username, $password) {
         global $accounts;
-        if(!isset($accounts[$username])) {
+        if(!isset($accounts[$username]))
             return(false);
-        } else {
-            return($password==$accounts[$username]);
-        }
+        return($password==$accounts[$username]);
     }
 
     $username=$_POST["username"];
@@ -30,5 +28,5 @@
 
     session_unset();
     session_destroy();
-    header("location: login.php");
+    header("location: test.php");
 ?>

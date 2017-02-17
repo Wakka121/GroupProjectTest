@@ -17,7 +17,7 @@
 
 <form action="validate.php" method="post">
     <div class="container">
-        <h2>Welcome to TextBookExchange! Test page</h2>
+        <h2>Welcome to TextBookExchange!</h2>
         <input type="text" name="username" placeholder="Username" required><br>
         <input type="password" name="password" placeholder="Password" required><br>
         <button type="submit">Login</button>
