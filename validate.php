@@ -15,7 +15,7 @@
         if(!isset($accounts[$username])) {
             return(false);
         } else {
-            return($password==$acounts[$username]);
+            return($password==$accounts[$username]);
         }
     }
 
